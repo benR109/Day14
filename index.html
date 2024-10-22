@@ -6,13 +6,14 @@
     <title>Two truths and a lie</title>
 </head>
 <body style="background-color: beige;">
+
     <h1>Mr. Seigs truth and lie game</h1>
     <hr>
 
     <h2>Introductions</h2>
     <form action="" id="name-form">
         <label for="fname"> First Name:</label><br>
-        <input type="text" name="fname"><br>
+        <input type="text" name="fname" id="fname"><br>
         <label for="lname">Last Name:</label><br>
         <input type="text" name="lname" id="lname"><br>
         <label for="age">Age:</label><br>
@@ -24,22 +25,37 @@
 
 
     <p id="green" style="font-size: x-large;">Welcome</p>
+    
     <hr>
 
     <h2>Warm up trivia question</h2>
     <p> What is the only food that connot go bad?</p>
-
+    <p id="trivia1-answer"></p>
     <form action="">
-        <input type="radio" name="trivial" id="chocolate">
+        <input type="radio" name="trivia1" id="chocolate">
         <label for="chocolate">Dark Chocolate</label><br>
-        <input type="radio" name="trivial" id="tuna">
-        <label for="chocolate">Canned Tuna</label><br>
-        <input type="radio" name="trivial" id="Honey">
-        <label for="chocolate">Honey</label><br>
+        <input type="radio" name="trivia1" id="tuna">
+        <label for="tuna">Canned Tuna</label><br>
+        <input type="radio" name="trivia1" id="honey">
+        <label for="honey">Honey</label><br>
     </form>
-    <input type="button" value="SUBMIT" onclick="trivial1();">
+    <input type="button" value="SUBMIT" onclick="trivia1();">
 
+    <hr>
 
+    <h2>Two Truths and a Lie. Which one is the Lie?</h2>
+    <p id="truth-answer"></p>
+    <form action="">
+        <input type="radio" name="truth" id="truth1">
+        <label for="truth1">I prefer Cold weather over Warm Weather.</label><br>
+        <input type="radio" name="truth" id="lie1">
+        <label for="lie1">I am a very good Surfer</label><br>
+        <input type="radio" name="truth" id="truth2">
+        <label for="truth2">I have been to 6/7 Continents</label><br>
+    </form>
+    <input type="button" value="SUBMIT" onclick="truth();">
+
+    <hr>
 
     <script src="js/truth.js"></script>
 </body>
